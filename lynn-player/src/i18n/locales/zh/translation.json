@@ -1,0 +1,12 @@
+{
+  "app": {
+    "name": "Lynn 播放器"
+  },
+  "nav": {
+    "music": "音乐",
+    "video": "视频",
+    "online": "在线",
+    "bilibili": "哔哩哔哩",
+    "settings": "设置"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "app": {
+    "name": "Lynn Player"
+  },
+  "nav": {
+    "music": "Music",
+    "video": "Video",
+    "online": "Online",
+    "bilibili": "Bilibili",
+    "settings": "Settings"
+  }
+}
