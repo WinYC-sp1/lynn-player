@@ -2,20 +2,18 @@ import { useState } from 'react';
 import NeteaseSearch from './NeteaseSearch';
 import NeteasePlaylist from './NeteasePlaylist';
 import NeteaseLogin from './NeteaseLogin';
-
-const sources = [
-  { key: 'netease', label: '网易云音乐' },
-  { key: 'kugou', label: '酷狗音乐' },
-];
+import UnifiedSearch from './UnifiedSearch';
+import KugouSearch from '../kugou/KugouSearch';
 
 const neteaseTabs = [
-  { key: 'search', label: '搜索' },
+  { key: 'unified', label: '统一搜索' },
+  { key: 'search', label: '网易搜索' },
   { key: 'playlist', label: '歌单' },
 ];
 
 export default function OnlinePage() {
   const [activeSource, setActiveSource] = useState('netease');
-  const [activeTab, setActiveTab] = useState('search');
+  const [activeTab, setActiveTab] = useState('unified');
   const [showLoginPanel, setShowLoginPanel] = useState(false);
 
   return (
@@ -39,7 +37,10 @@ export default function OnlinePage() {
       </div>
 
       <div style={{ display: 'flex', gap: '8px', marginBottom: '16px' }}>
-        {sources.map((s) => (
+        {[
+          { key: 'netease', label: '网易云音乐' },
+          { key: 'kugou', label: '酷狗音乐' },
+        ].map((s) => (
           <button
             key={s.key}
             onClick={() => setActiveSource(s.key)}
@@ -77,6 +78,7 @@ export default function OnlinePage() {
               ))}
             </div>
 
+            {activeTab === 'unified' && <UnifiedSearch />}
             {activeTab === 'search' && <NeteaseSearch />}
             {activeTab === 'playlist' && <NeteasePlaylist />}
           </div>
@@ -99,8 +101,8 @@ export default function OnlinePage() {
       )}
 
       {activeSource === 'kugou' && (
-        <div style={{ textAlign: 'center', padding: '40px', color: 'var(--text-secondary)' }}>
-          酷狗音乐功能开发中...
+        <div style={{ flex: 1, overflowY: 'auto' }}>
+          <KugouSearch />
         </div>
       )}
     </div>

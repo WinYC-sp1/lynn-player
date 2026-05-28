@@ -14,6 +14,7 @@ interface PlayerState {
   setCurrentTime: (time: number) => void;
   setVolume: (volume: number) => void;
   setPlaybackMode: (mode: PlaybackMode) => void;
+  setPlaylist: (playlist: TrackInfo[]) => void;
   playNext: () => void;
   playPrevious: () => void;
   togglePlay: () => void;
@@ -32,6 +33,7 @@ export const usePlayerStore = create<PlayerState>((set, get) => ({
   setCurrentTime: (time) => set({ currentTime: time }),
   setVolume: (volume) => set({ volume: Math.max(0, Math.min(1, volume)) }),
   setPlaybackMode: (mode) => set({ playbackMode: mode }),
+  setPlaylist: (playlist) => set({ playlist }),
   playNext: () => {
     const { playlist, currentTrack, playbackMode } = get();
     if (playlist.length === 0) return;

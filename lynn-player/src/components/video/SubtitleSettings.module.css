@@ -1,0 +1,138 @@
+.settingsContainer {
+  position: relative;
+  display: inline-block;
+}
+
+.toggleButton {
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  color: white;
+  font-size: 20px;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.toggleButton:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.settingsPanel {
+  position: absolute;
+  bottom: 100%;
+  right: 0;
+  margin-bottom: 8px;
+  background: rgba(20, 20, 20, 0.95);
+  color: white;
+  padding: 16px;
+  border-radius: 8px;
+  min-width: 280px;
+  max-height: 400px;
+  overflow-y: auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  z-index: 100;
+}
+
+.settingSection {
+  margin-bottom: 16px;
+}
+
+.settingSection:last-child {
+  margin-bottom: 0;
+}
+
+.settingSection h4 {
+  margin: 0 0 8px 0;
+  font-size: 14px;
+  color: #aaa;
+}
+
+.settingRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 8px;
+  flex-wrap: wrap;
+}
+
+.settingRow label {
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.settingRow input[type="checkbox"] {
+  cursor: pointer;
+}
+
+.settingRow input[type="range"] {
+  flex: 1;
+  min-width: 100px;
+  cursor: pointer;
+}
+
+.settingRow input[type="color"] {
+  width: 40px;
+  height: 24px;
+  padding: 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.settingRow select {
+  padding: 4px 8px;
+  border-radius: 4px;
+  border: 1px solid #444;
+  background: #333;
+  color: white;
+  cursor: pointer;
+}
+
+.actionButton,
+.smallButton,
+.resetButton {
+  padding: 6px 12px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  font-size: 12px;
+  transition: background 0.2s;
+}
+
+.actionButton {
+  background: var(--accent, #3b82f6);
+  color: white;
+}
+
+.actionButton:hover:not(:disabled) {
+  background: #2563eb;
+}
+
+.actionButton:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.smallButton {
+  background: #444;
+  color: white;
+  flex: 1;
+}
+
+.smallButton:hover {
+  background: #555;
+}
+
+.resetButton {
+  background: #dc2626;
+  color: white;
+  width: 100%;
+}
+
+.resetButton:hover {
+  background: #b91c1c;
+}

@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import { useAppStore } from './stores/appStore';
 import { useVisualStore } from './stores/visualStore';
+import { usePlaybackPersistence } from './hooks/usePlaybackPersistence';
 import AppLayout from './components/layout/AppLayout';
 import MusicPage from './modules/local-music/MusicPage';
 import VideoPage from './modules/local-video/VideoPage';
@@ -34,6 +35,7 @@ function ThemeInitializer() {
 
 function App() {
   const initializeVisualEffects = useVisualStore((s) => s.initializeVisualEffects);
+  usePlaybackPersistence();
 
   useEffect(() => {
     initializeVisualEffects();

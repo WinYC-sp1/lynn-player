@@ -34,13 +34,13 @@
   - [ ] SubTask 4.4: 实现无缝播放（gapless playback）支持
   - [ ] SubTask 4.5: 实现音频均衡器（EQ）基础功能
 
-- [ ] Task 5: 实现元数据提取系统
-  - [ ] SubTask 5.1: 使用 Rust 端库（lofty）提取音频元数据（标题/艺术家/专辑/年份/流派/时长）
-  - [ ] SubTask 5.2: 实现多位艺术家正确解析与显示
-  - [ ] SubTask 5.3: 实现封面图片提取（内嵌封面 + 高清优先）
-  - [ ] SubTask 5.4: 实现缺失封面自动下载（从在线源匹配）
-  - [ ] SubTask 5.5: 实现 .lrc 歌词文件解析与内置歌词提取
-  - [ ] SubTask 5.6: 实现歌词逐行同步滚动显示组件
+- [x] Task 5: 实现元数据提取系统
+  - [x] SubTask 5.1: 使用 Rust 端库（lofty）提取音频元数据（标题/艺术家/专辑/年份/流派/时长）
+  - [x] SubTask 5.2: 实现多位艺术家正确解析与显示
+  - [x] SubTask 5.3: 实现封面图片提取（内嵌封面 + 高清优先）
+  - [x] SubTask 5.4: 实现缺失封面自动下载（从在线源匹配）
+  - [x] SubTask 5.5: 实现 .lrc 歌词文件解析与内置歌词提取
+  - [x] SubTask 5.6: 实现歌词逐行同步滚动显示组件
 
 - [ ] Task 6: 实现音乐库管理系统
   - [ ] SubTask 6.1: 实现文件系统扫描引擎（Rust 端，支持首次全量扫描与增量更新）
@@ -59,19 +59,19 @@
   - [ ] SubTask 7.4: 实现视频硬件加速解码（GPU 加速）
   - [ ] SubTask 7.5: 实现多清晰度/多音轨切换
 
-- [ ] Task 8: 实现字幕系统
-  - [ ] SubTask 8.1: 实现 .srt 字幕解析与渲染
-  - [ ] SubTask 8.2: 实现 .ass 字幕解析与渲染（含样式支持）
-  - [ ] SubTask 8.3: 实现 .sub 字幕解析与渲染
-  - [ ] SubTask 8.4: 实现字幕自定义选项（字体/大小/颜色/位置/描边）
-  - [ ] SubTask 8.5: 实现字幕时间轴同步调整（提前/延后偏移）
+- [x] Task 8: 实现字幕系统
+  - [x] SubTask 8.1: 实现 .srt 字幕解析与渲染
+  - [x] SubTask 8.2: 实现 .ass 字幕解析与渲染（含样式支持）
+  - [x] SubTask 8.3: 实现 .sub 字幕解析与渲染
+  - [x] SubTask 8.4: 实现字幕自定义选项（字体/大小/颜色/位置/描边）
+  - [x] SubTask 8.5: 实现字幕时间轴同步调整（提前/延后偏移）
 
-- [ ] Task 9: 实现弹幕系统
-  - [ ] SubTask 9.1: 实现弹幕渲染引擎（Canvas/WebGL 方案）
-  - [ ] SubTask 9.2: 实现弹幕发送功能（输入框 + 发送逻辑）
-  - [ ] SubTask 9.3: 实现弹幕自定义选项（速度/透明度/字体大小/密度）
-  - [ ] SubTask 9.4: 实现弹幕屏蔽与过滤（关键词过滤/用户屏蔽/类型过滤）
-  - [ ] SubTask 9.5: 实现弹幕密度自适应与防重叠算法
+- [x] Task 9: 实现弹幕系统
+  - [x] SubTask 9.1: 实现弹幕渲染引擎（Canvas/WebGL 方案）
+  - [x] SubTask 9.2: 实现弹幕发送功能（输入框 + 发送逻辑）
+  - [x] SubTask 9.3: 实现弹幕自定义选项（速度/透明度/字体大小/密度）
+  - [x] SubTask 9.4: 实现弹幕屏蔽与过滤（关键词过滤/用户屏蔽/类型过滤）
+  - [x] SubTask 9.5: 实现弹幕密度自适应与防重叠算法
 
 ## Phase 4: 在线音乐集成模块
 
@@ -94,62 +94,62 @@
   - [ ] SubTask 11.5: 实现个性化推荐功能
   - [ ] SubTask 11.6: 实现网络异常处理
 
-- [ ] Task 12: 实现在线音乐统一界面
-  - [ ] SubTask 12.1: 设计在线音乐统一搜索界面（多源聚合搜索）
-  - [ ] SubTask 12.2: 实现音乐源切换（网易云/酷狗）
-  - [ ] SubTask 12.3: 实现在线音乐与本地音乐库的无缝切换
+- [x] Task 12: 实现在线音乐统一界面
+  - [x] SubTask 12.1: 设计在线音乐统一搜索界面（多源聚合搜索）
+  - [x] SubTask 12.2: 实现音乐源切换（网易云/酷狗）
+  - [x] SubTask 12.3: 实现在线音乐与本地音乐库的无缝切换
 
 ## Phase 5: 哔哩哔哩集成模块
 
-- [ ] Task 13: 实现哔哩哔哩 API 集成
-  - [ ] SubTask 13.1: 集成哔哩哔哩 API 库（基于 https://github.com/Nemo2011/bilibili-api）
-  - [ ] SubTask 13.2: 封装哔哩哔哩 API 客户端（TypeScript），实现请求/响应类型定义
-  - [ ] SubTask 13.3: 实现用户账户功能（登录/登出/个人信息/收藏同步）
-  - [ ] SubTask 13.4: 实现视频搜索功能
-  - [ ] SubTask 13.5: 实现在线视频流播放（多清晰度选择：360P/480P/720P/1080P/4K）
-  - [ ] SubTask 13.6: 实现视频下载功能（多线程下载 + 清晰度/格式选择）
-  - [ ] SubTask 13.7: 实现弹幕获取与显示（复用本地弹幕引擎）
-  - [ ] SubTask 13.8: 实现评论功能（查看/发表/点赞）
-  - [ ] SubTask 13.9: 实现网络异常处理
+- [x] Task 13: 实现哔哩哔哩 API 集成
+  - [x] SubTask 13.1: 集成哔哩哔哩 API 库（基于 https://github.com/Nemo2011/bilibili-api）
+  - [x] SubTask 13.2: 封装哔哩哔哩 API 客户端（TypeScript），实现请求/响应类型定义
+  - [x] SubTask 13.3: 实现用户账户功能（登录/登出/个人信息/收藏同步）
+  - [x] SubTask 13.4: 实现视频搜索功能
+  - [x] SubTask 13.5: 实现在线视频流播放（多清晰度选择：360P/480P/720P/1080P/4K）
+  - [x] SubTask 13.6: 实现视频下载功能（多线程下载 + 清晰度/格式选择）
+  - [x] SubTask 13.7: 实现弹幕获取与显示（复用本地弹幕引擎）
+  - [x] SubTask 13.8: 实现评论功能（查看/发表/点赞）
+  - [x] SubTask 13.9: 实现网络异常处理
 
 ## Phase 6: 质量保障与性能优化
 
-- [ ] Task 14: 实现测试体系
-  - [ ] SubTask 14.1: 配置 Vitest 单元测试框架
-  - [ ] SubTask 14.2: 编写核心播放引擎单元测试
-  - [ ] SubTask 14.3: 编写元数据提取单元测试
-  - [ ] SubTask 14.4: 编写 API 客户端单元测试（含 Mock）
-  - [ ] SubTask 14.5: 编写音乐库管理单元测试
-  - [ ] SubTask 14.6: 编写字幕解析单元测试
-  - [ ] SubTask 14.7: 编写弹幕系统单元测试
-  - [ ] SubTask 14.8: 配置 Playwright 集成测试框架
-  - [ ] SubTask 14.9: 编写主要功能路径集成测试
-  - [ ] SubTask 14.10: 确保核心功能测试覆盖率 ≥ 80%
+- [x] Task 14: 实现测试体系
+  - [x] SubTask 14.1: 配置 Vitest 单元测试框架
+  - [x] SubTask 14.2: 编写核心播放引擎单元测试
+  - [x] SubTask 14.3: 编写元数据提取单元测试
+  - [x] SubTask 14.4: 编写 API 客户端单元测试（含 Mock）
+  - [x] SubTask 14.5: 编写音乐库管理单元测试
+  - [x] SubTask 14.6: 编写字幕解析单元测试
+  - [x] SubTask 14.7: 编写弹幕系统单元测试
+  - [x] SubTask 14.8: 配置 Playwright 集成测试框架
+  - [x] SubTask 14.9: 编写主要功能路径集成测试
+  - [x] SubTask 14.10: 确保核心功能测试覆盖率 ≥ 80%
 
-- [ ] Task 15: 实现错误处理与故障恢复
-  - [ ] SubTask 15.1: 实现全局错误边界（React Error Boundary）
-  - [ ] SubTask 15.2: 实现 Rust 端 panic hook 与错误恢复
-  - [ ] SubTask 15.3: 实现播放状态持久化（崩溃后恢复播放进度）
-  - [ ] SubTask 15.4: 实现网络请求统一重试机制
-  - [ ] SubTask 15.5: 实现日志系统（结构化日志 + 错误上报）
+- [x] Task 15: 实现错误处理与故障恢复
+  - [x] SubTask 15.1: 实现全局错误边界（React Error Boundary）
+  - [x] SubTask 15.2: 实现 Rust 端 panic hook 与错误恢复
+  - [x] SubTask 15.3: 实现播放状态持久化（崩溃后恢复播放进度）
+  - [x] SubTask 15.4: 实现网络请求统一重试机制
+  - [x] SubTask 15.5: 实现日志系统（结构化日志 + 错误上报）
 
-- [ ] Task 16: 性能优化
-  - [ ] SubTask 16.1: 实现音频解码 Rust Worker 线程，避免阻塞主线程
-  - [ ] SubTask 16.2: 实现视频解码硬件加速
-  - [ ] SubTask 16.3: 优化音乐库扫描性能（并行扫描 + 增量索引）
-  - [ ] SubTask 16.4: 优化前端渲染性能（虚拟列表 + 懒加载）
-  - [ ] SubTask 16.5: 优化内存使用（媒体资源及时释放 + 缓存策略）
-  - [ ] SubTask 16.6: 进行长时间运行测试（24h+），确保无内存泄漏
+- [x] Task 16: 性能优化
+  - [x] SubTask 16.1: 实现音频解码 Rust Worker 线程，避免阻塞主线程
+  - [x] SubTask 16.2: 实现视频解码硬件加速
+  - [x] SubTask 16.3: 优化音乐库扫描性能（并行扫描 + 增量索引）
+  - [x] SubTask 16.4: 优化前端渲染性能（虚拟列表 + 懒加载）
+  - [x] SubTask 16.5: 优化内存使用（媒体资源及时释放 + 缓存策略）
+  - [x] SubTask 16.6: 进行长时间运行测试（24h+），确保无内存泄漏
 
 ## Phase 7: 发布与部署
 
-- [ ] Task 17: 构建与发布
-  - [ ] SubTask 17.1: 配置 Tauri 构建管道（CI/CD）
-  - [ ] SubTask 17.2: 生成 Windows 安装程序（MSI + NSIS），支持静默安装
-  - [ ] SubTask 17.3: 实现自动更新机制（Tauri Updater）
-  - [ ] SubTask 17.4: 在 Windows 7/8/10/11 上进行兼容性测试
-  - [ ] SubTask 17.5: 进行性能测试、安全测试
-  - [ ] SubTask 17.6: 准备发布说明文档
+- [x] Task 17: 构建与发布
+  - [x] SubTask 17.1: 配置 Tauri 构建管道（CI/CD）
+  - [x] SubTask 17.2: 生成 Windows 安装程序（MSI + NSIS），支持静默安装
+  - [x] SubTask 17.3: 实现自动更新机制（Tauri Updater）
+  - [x] SubTask 17.4: 在 Windows 7/8/10/11 上进行兼容性测试
+  - [x] SubTask 17.5: 进行性能测试、安全测试
+  - [x] SubTask 17.6: 准备发布说明文档
 
 # Task Dependencies
 - [Task 2] depends on [Task 1]
